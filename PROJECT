@@ -1,0 +1,15 @@
+domain: jiaf.hu
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: p7
+repo: github.com/Asdfgh12345asf/secretsync
+resources:
+- controller: true
+  group: core
+  kind: Secret
+  path: k8s.io/api/core/v1
+  version: v1
+version: "3"
